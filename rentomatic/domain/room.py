@@ -1,6 +1,7 @@
 import uuid
 import dataclasses
 
+
 @dataclasses.dataclass
 class Room:
     code: uuid.UUID

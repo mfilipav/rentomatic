@@ -1,10 +1,11 @@
 import json
 import dataclasses
 
+
 class RoomJsonEncoder(json.JSONEncoder):
     def default(self, o):
         # provide a custom encoder subclass to serialize dataclasses
-        # see https://docs.python.org/3/library/json.html#json.JSONEncoder.default
+        # see https://docs.python.org/3/library/json.html#json.JSONEncoder.default  # noqa
         try:
             new_dict = {}
             if dataclasses.is_dataclass(o):

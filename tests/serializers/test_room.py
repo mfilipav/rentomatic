@@ -31,5 +31,4 @@ def test_serialize_domain_room():
     # the latter overwrites JSONEncoder
     # JSONEncoder can convert Python dict to JSON object
     json_room = json.dumps(room, cls=RoomJsonEncoder)
-
     assert json.loads(json_room) == json.loads(expected_json)
