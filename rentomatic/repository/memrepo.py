@@ -1,6 +1,7 @@
 from rentomatic.domain.room import Room
 
 class MemRepo:
+    # is external system/gateway
     def __init__(self, data):
         self.data = data
         

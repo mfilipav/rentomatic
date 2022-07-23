@@ -4,6 +4,7 @@ import dataclasses
 
 @dataclasses.dataclass
 class Room:
+    # is entity
     code: uuid.UUID
     size: int
     price: int
